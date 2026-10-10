@@ -1,3 +1,4 @@
+<img width="1280" height="800" alt="BUG-001_image_broken png" src="https://github.com/user-attachments/assets/d64a2db6-b40a-413b-a00c-c2d54c4e4517" />
 # SauceDemo Bug 列表
 
 > 测试平台：https://www.saucedemo.com/
@@ -21,7 +22,7 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-001](https://raw.githubusercontent.com/sumoer369/saucedemo-manual-testing/main/images/BUG-001_image_broken.png)
+<img width="1280" height="800" alt="BUG-001_image_broken png" src="https://github.com/user-attachments/assets/53668c23-95d2-49da-873b-2d36dac65ae2" />
 
 ---
 
@@ -39,7 +40,7 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-002](https://raw.githubusercontent.com/sumoer369/saucedemo-manual-testing/main/images/BUG-002_add_cart_fail.png)
+<img width="1280" height="800" alt="BUG-002_add_cart_fail png" src="https://github.com/user-attachments/assets/de68a810-53e2-4ba6-ace1-8a77598ac14e" />
 
 ---
 
@@ -57,7 +58,8 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-003](https://raw.githubusercontent.com/sumoer369/saucedemo-manual-testing/main/images/BUG-003_login_slow.png)
+<img width="1280" height="800" alt="BUG-003_login_slow png" src="https://github.com/user-attachments/assets/1e4c3a96-1720-4f1e-8596-c1dc70c39e69" />
+
 
 ---
 
@@ -75,7 +77,8 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-004](https://raw.githubusercontent.com/sumoer369/saucedemo-manual-testing/main/images/BUG-004_layout_broken.png)
+<img width="1280" height="800" alt="BUG-004_layout_broken png" src="https://github.com/user-attachments/assets/dcf830f9-4eb7-427c-b209-637691de0ff4" />
+
 
 ---
 
@@ -93,7 +96,8 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-006](https://raw.githubusercontent.com/sumoer369/saucedemo-manual-testing/main/images/BUG-006_sort_fail.png)
+<img width="1280" height="800" alt="BUG-006_sort_fail png" src="https://github.com/user-attachments/assets/58647b40-c471-4202-a52c-e98ee10ddd0c" />
+
 
 ---
 
@@ -111,4 +115,4 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-008](https://raw.githubusercontent.com/sumoer369/saucedemo-manual-testing/main/images/BUG-008_detail_add_fail.png)
+<img width="1280" height="800" alt="BUG-008_detail_add_fail png" src="https://github.com/user-attachments/assets/ad27a371-d89d-4ada-8113-42ab29e28437" />
