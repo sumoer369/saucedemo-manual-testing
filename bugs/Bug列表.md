@@ -21,7 +21,7 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-001](../screenshots/BUG-001_problem_user_图片错乱.png)
+![BUG-001](../screenshots/BUG-001_image_broken.png)
 
 ---
 
@@ -39,7 +39,7 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-002](../screenshots/BUG-002_problem_user_加购失效.png)
+![BUG-002](../screenshots/BUG-002_add_cart_fail.png)
 
 ---
 
@@ -57,7 +57,7 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-003](../screenshots/BUG-003_performance_glitch_登录慢.png)
+![BUG-003](../screenshots/BUG-003_login_slow.png)
 
 ---
 
@@ -75,7 +75,7 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-004](../screenshots/BUG-004_visual_user_排版错位.png)
+![BUG-004](../screenshots/BUG-004_layout_broken.png)
 
 ---
 
@@ -93,7 +93,7 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-006](../screenshots/BUG-006_problem_user_排序失效.png)
+![BUG-006](../screenshots/BUG-006_sort_fail.png)
 
 ---
 
@@ -111,4 +111,4 @@
 | **状态** | 新建 |
 
 **截图：**
-![BUG-008](../screenshots/BUG-008_problem_user_详情页加购失效.png)
+![BUG-008](../screenshots/BUG-008_detail_add_fail.png)
