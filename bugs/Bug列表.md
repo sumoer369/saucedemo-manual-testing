@@ -3,6 +3,7 @@
 > 测试平台：https://www.saucedemo.com/
 > 测试时间：2026-10-10
 > 测试环境：Windows 11 + Chrome 浏览器
+> 共发现缺陷：6 个
 
 ---
 
@@ -12,6 +13,7 @@
 | :--- | :--- |
 | **模块** | 商品列表 |
 | **严重程度** | 中 |
+| **关联用例** | TC-014 |
 | **关联账号** | `problem_user` / `secret_sauce` |
 | **复现步骤** | 1. 打开 saucedemo.com<br>2. 用 problem_user 登录<br>3. 查看商品列表页 |
 | **预期结果** | 每个商品显示对应的图片 |
@@ -19,8 +21,7 @@
 | **状态** | 新建 |
 
 **截图：**
-
-![BUG-001](screenshots/BUG-001_problem_user_图片错乱.png)
+![BUG-001](../screenshots/BUG-001_problem_user_图片错乱.png)
 
 ---
 
@@ -30,6 +31,7 @@
 | :--- | :--- |
 | **模块** | 购物车 |
 | **严重程度** | 高 |
+| **关联用例** | TC-022 |
 | **关联账号** | `problem_user` / `secret_sauce` |
 | **复现步骤** | 1. 用 problem_user 登录<br>2. 在商品列表点击 "Add to cart" |
 | **预期结果** | 商品成功加入购物车，按钮变为 "Remove" |
@@ -37,26 +39,25 @@
 | **状态** | 新建 |
 
 **截图：**
-
-![BUG-002](screenshots/BUG-002_problem_user_加购失效.png)
+![BUG-002](../screenshots/BUG-002_problem_user_加购失效.png)
 
 ---
 
-## BUG-003：performance_glitch_user 登录加载超过10秒
+## BUG-003：performance_glitch_user 登录 LCP 达 5.02 秒
 
 | 字段 | 内容 |
 | :--- | :--- |
 | **模块** | 登录 |
 | **严重程度** | 中 |
+| **关联用例** | TC-031 |
 | **关联账号** | `performance_glitch_user` / `secret_sauce` |
-| **复现步骤** | 1. 打开 saucedemo.com<br>2. 用 performance_glitch_user 登录 |
-| **预期结果** | 3 秒内完成登录并跳转 |
-| **实际结果** | 登录耗时超过 10 秒，页面明显卡顿 |
+| **复现步骤** | 1. 用 performance_glitch_user 登录<br>2. 打开 Chrome F12 Performance 面板记录加载过程 |
+| **预期结果** | 页面 LCP 应在 2.5 秒以内 |
+| **实际结果** | 页面 LCP 达到 5.02 秒（红色 Poor 级别），加载明显卡顿 |
 | **状态** | 新建 |
 
 **截图：**
-
-![BUG-003](screenshots/BUG-003_performance_glitch_登录慢.png)
+![BUG-003](../screenshots/BUG-003_performance_glitch_登录慢.png)
 
 ---
 
@@ -66,6 +67,7 @@
 | :--- | :--- |
 | **模块** | 商品列表 |
 | **严重程度** | 低 |
+| **关联用例** | TC-032 |
 | **关联账号** | `visual_user` / `secret_sauce` |
 | **复现步骤** | 1. 用 visual_user 登录<br>2. 查看商品列表页 |
 | **预期结果** | 图片和文字对齐整齐 |
@@ -73,23 +75,40 @@
 | **状态** | 新建 |
 
 **截图：**
-
-![BUG-004](screenshots/BUG-004_visual_user_排版错位.png)
+![BUG-004](../screenshots/BUG-004_visual_user_排版错位.png)
 
 ---
 
-## BUG-005：error_user 结算流程报错
+## BUG-006：problem_user 排序功能失效
 
 | 字段 | 内容 |
 | :--- | :--- |
-| **模块** | 结算 |
-| **严重程度** | 高 |
-| **关联账号** | `error_user` / `secret_sauce` |
-| **复现步骤** | 1. 用 error_user 登录<br>2. 添加商品到购物车<br>3. 进入结算流程 |
-| **预期结果** | 正常完成下单，显示 "Thank you for your order!" |
-| **实际结果** | 页面报错或流程卡住 |
+| **模块** | 商品列表 |
+| **严重程度** | 中 |
+| **关联用例** | TC-034 |
+| **关联账号** | `problem_user` / `secret_sauce` |
+| **复现步骤** | 1. 用 problem_user 登录<br>2. 下拉选择 "Price (low to high)" |
+| **预期结果** | 商品按价格升序排列 |
+| **实际结果** | 排序无任何变化 |
 | **状态** | 新建 |
 
 **截图：**
+![BUG-006](../screenshots/BUG-006_problem_user_排序失效.png)
 
-![BUG-005](screenshots/BUG-005_error_user_结算报错.png)
+---
+
+## BUG-008：problem_user 商品详情页加购按钮无响应
+
+| 字段 | 内容 |
+| :--- | :--- |
+| **模块** | 商品详情 |
+| **严重程度** | 高 |
+| **关联用例** | TC-035 |
+| **关联账号** | `problem_user` / `secret_sauce` |
+| **复现步骤** | 1. 用 problem_user 登录<br>2. 进入任意商品详情页<br>3. 点击 "Add to cart" |
+| **预期结果** | 商品加入购物车，按钮变为 "Remove" |
+| **实际结果** | 按钮无反应，购物车角标不更新 |
+| **状态** | 新建 |
+
+**截图：**
+![BUG-008](../screenshots/BUG-008_problem_user_详情页加购失效.png)
