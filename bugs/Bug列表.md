@@ -1,4 +1,3 @@
-<img width="1280" height="800" alt="BUG-001_image_broken png" src="https://github.com/user-attachments/assets/d64a2db6-b40a-413b-a00c-c2d54c4e4517" />
 # SauceDemo Bug 列表
 
 > 测试平台：https://www.saucedemo.com/
